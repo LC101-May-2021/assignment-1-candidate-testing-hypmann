@@ -14,6 +14,7 @@ const input = require('readline-sync');
 
 // TODO 1.1a: Define:
 let candidateName = " ";
+
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 
   //Questions Section.
@@ -32,7 +33,8 @@ let candidateAnswer = " ";
 //function askForName() {
   // TODO 1.1b: Ask for candidate's name //
  candidateName = input.question("What is your name: ");
-console.log("candidateName: " + candidateName);
+ console.log("candidateName: " + candidateName);
+ 
 
    //TODO 1.1c: Greet User
    console.log("Welcome: " + candidateName);
@@ -52,9 +54,11 @@ console.log("candidateName: " + candidateName);
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
 if (correctAnswer === candidateAnswer) {
-  console.log("You have answered the question correctly");
+  console.log("You have answered the question correctly.");
 } else {
-  console.log("Your answer is incorrect");
+  console.log("Your answer is incorrect. Correct Answer is: ");
+  candidateAnswer = "Sally Ride"
+  console.log(candidateAnswer);
 }
 
 
@@ -68,7 +72,7 @@ if (correctAnswer === candidateAnswer) {
 //function runProgram() {
   //askForName();
   // TODO 1.1c: Ask for candidate's name //
- //QUESTION NAME MOVED TO LINE NUMBER 3
+ 
   //askQuestion();
   //gradeQuiz(this.candidateAnswers);
 //}
