@@ -1,3 +1,3 @@
 const quiz = require('./candidate-testing');
 
-//quiz.runProgram();
+quiz.runProgram();
