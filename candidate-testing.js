@@ -28,7 +28,7 @@ function askQuestion() {
     //console.log(i);  
     candidateAnswers.push(input.question(questions[i]));
   
-    if (candidateAnswers[i] === correctAnswers[i]) {
+    if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()) {
       console.log(`Your answer is correct ${candidateAnswers[i]}`);
       console.log(`The correct answer is: ${correctAnswers[i]}`);
       totalCorrectAnswers +=1;
@@ -38,23 +38,11 @@ function askQuestion() {
     }
   }
   return totalCorrectAnswers;
-  return grade;
+  
 }
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-
-//     if (candidateAnswers[i] === correctAnswers[i]) {
-//       console.log(`Your answer is correct ${candidateAnswers[i]}`);
-//       console.log(`The correct answer is: ${correctAnswers[i]}`);
-//       totalCorrectAnswers +=1;
-//     } else {
-//       console.log(`Your answer is not correct`);
-//       console.log(`The correct answer is: ${correctAnswers[i]}`);
-//     }
-//   
-//   return totalCorrectAnswers;
-// 
 
    let grade = (totalCorrectAnswers / 5) * 100;
    console.log(grade);
