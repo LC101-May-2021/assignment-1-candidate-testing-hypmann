@@ -60,20 +60,20 @@ function gradeQuiz(candidateAnswers) {
     //   console.log(`The correct answer is ${correctAnswers}`);
     // }
  
-   let gradeAvg = (totalCorrectAnswers / 5) * 100;
-   console.log(gradeAvg);
+   let grade = (totalCorrectAnswers / 5) * 100;
+   console.log(grade);
 
-     if (gradeAvg >= 80) {
-      console.log(`>>> Overall Grade: ${gradeAvg}%  <<<`);
+     if (grade >= 80) {
+      console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
       console.log();
        console.log(">>> Status: Passed <<<");
 
      } else {
-     console.log(`>>> Overall Grade: ${gradeAvg}% <<<`);
+     console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
      console.log(">>> Status: Failed <<<");
 
      }
-   //let grade;  
+    
 
   //return grade;
 }
