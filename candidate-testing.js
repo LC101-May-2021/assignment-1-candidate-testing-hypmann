@@ -38,6 +38,7 @@ function askQuestion() {
     }
   }
   return totalCorrectAnswers;
+  return grade;
 }
 function gradeQuiz(candidateAnswers) {
 
@@ -68,7 +69,7 @@ function gradeQuiz(candidateAnswers) {
      console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
      console.log(">>> Status: Failed <<<");
     }
-    
+
     return grade;
 }
  
