@@ -63,7 +63,7 @@ function gradeQuiz(candidateAnswers) {
 
    let endScore = myCompleteGrade;
   
-   function myCompleteGrade(candidateAnswers, correctAnswers) {
+   function myCompleteGrade(grade) {
      if (grade >= 80) {
       console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
       console.log();
@@ -76,7 +76,7 @@ function gradeQuiz(candidateAnswers) {
 }
    
    //myCompleteGrade();
-   return myCompleteGrade();
+   return myCompleteGrade(grade);
   // return grade;
 }
 function runProgram() {
