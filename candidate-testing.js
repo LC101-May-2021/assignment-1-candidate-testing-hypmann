@@ -13,6 +13,7 @@ let questions =  [ "Who was the first American woman in space? ", "\nTrue or fal
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"];
 let candidateAnswers = [];
 let totalCorrectAnswers = 0;
+let myCompleteGrade;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
@@ -75,7 +76,7 @@ function gradeQuiz(candidateAnswers) {
 }
    
    //myCompleteGrade();
-   return  myCompleteGrade();
+   return myCompleteGrade();
   // return grade;
 }
 function runProgram() {
