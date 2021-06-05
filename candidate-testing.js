@@ -59,8 +59,10 @@ function gradeQuiz(candidateAnswers) {
 
    let grade = (totalCorrectAnswers / 5) * 100;
    console.log(grade);
+
+   let endScore = myCompleteGrade;
   
-   function myCompleteGrade() {
+   function myCompleteGrade(candidateAnswers, correctAnswers) {
      if (grade >= 80) {
       console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
       console.log();
@@ -71,8 +73,10 @@ function gradeQuiz(candidateAnswers) {
      console.log(">>> Status: Failed <<<");
     }
 }
-myCompleteGrade();
-   return grade;
+   
+   //myCompleteGrade();
+   return  myCompleteGrade();
+  // return grade;
 }
 function runProgram() {
   askForName();
