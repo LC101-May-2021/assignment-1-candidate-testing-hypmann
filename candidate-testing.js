@@ -17,7 +17,7 @@ let myCompleteGrade;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
- let candidateName = input.question("What is Your Name: ");
+ candidateName = input.question("What is Your Name: ");
 
  console.log("candidateName: " + candidateName);
 }
@@ -45,25 +45,12 @@ function gradeQuiz(candidateAnswers) {
 
   //TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
-//     if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()) {
-//       console.log(`Your answer is correct ${candidateAnswers[i]}`);
-//       console.log(`The correct answer is: ${correctAnswers[i]}`);
-//       totalCorrectAnswers +=1;
-//     } else {
-//       console.log(`Your answer is not correct`);
-//       console.log(`The correct answer is: ${correctAnswers[i]}`);
-//     }
-//   
-
-//   return totalCorrectAnswers;
-// 
-
    let grade = (totalCorrectAnswers / 5) * 100;
    console.log(grade);
 
    let endScore = myCompleteGrade;
-  
-   function myCompleteGrade(grade) {
+   
+   function myCompleteGrade() {
      if (grade >= 80) {
       console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
       console.log();
@@ -72,12 +59,12 @@ function gradeQuiz(candidateAnswers) {
      } else {
      console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
      console.log(">>> Status: Failed <<<");
+     return grade;
     }
 }
    
-   //myCompleteGrade();
-   return myCompleteGrade(grade);
-  // return grade;
+   myCompleteGrade();
+
 }
 function runProgram() {
   askForName();
