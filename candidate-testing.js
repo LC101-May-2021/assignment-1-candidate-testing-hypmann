@@ -46,21 +46,22 @@ function gradeQuiz(candidateAnswers) {
   //TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
    let grade = (totalCorrectAnswers / 5) * 100;
-   console.log(grade);
+  //console.log(grade);
+        // console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
+
 
    function myCompleteGrade() {
+     console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
      if (grade >= 80) {
-      console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
       console.log();
       console.log(">>> Status: Passed <<<");
-      return grade;
-      
+
      } else {
-     console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
+     //console.log(`>>> Overall Grade: ${grade}% (${totalCorrectAnswers} of ${questions.length} responses correct) <<<`);
      console.log(">>> Status: Failed <<<");
-     return grade;
+     
     }
-    //return grade;
+    return grade;
 
   }
    myCompleteGrade();
